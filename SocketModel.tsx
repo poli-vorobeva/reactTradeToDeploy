@@ -18,7 +18,7 @@ export class SocketModel {
 	constructor() {
 
 		//const _websocket = new window.WebSocket('ws://localhost:3001/');
-		const _websocket = new window.WebSocket('ws://srvrtrd-production.up.railway.app/')
+		const _websocket = new window.WebSocket('wss://srvrtrd-production.up.railway.app/')
 			_websocket.onopen = () => {
 			this.websocket = _websocket;
 		};
